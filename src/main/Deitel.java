@@ -12,7 +12,7 @@ public class Deitel {
 Banco b = new Banco(3);
 Conta c = new Conta();
 Cliente cli = new Cliente();
-cli.nome = "Tanulio!!!"
+cli.nome = "Tanulio!!!";
 c.saldo = 13000;
 
 b.addConta(c);
