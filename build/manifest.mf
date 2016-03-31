@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Created-By: 1.8.0_73-b02 (Oracle Corporation)
+X-COMMENT: Main-Class will be added automatically by build
+Codebase: C:\Users\IsaiasVelasquez-\Desktop\Java Projects\deitel\dist
+Application-Library-Allowable-Codebase: C:\Users\IsaiasVelasquez-\Desk
+ top\Java Projects\deitel\dist
+Caller-Allowable-Codebase: C:\Users\IsaiasVelasquez-\Desktop\Java Proj
+ ects\deitel\dist
+Permissions: sandbox
+Application-Name: Exercícios de Fixação da Caelum FJ-11
+
