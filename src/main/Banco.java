@@ -11,10 +11,12 @@ package main;
  */
 public class Banco {
 
+    
     protected Conta[] c;
 
     public Banco(int n) {
         this.c = new Conta[n];
+
     }
 
     public void addConta(Conta conta){
@@ -23,4 +25,10 @@ public class Banco {
         c[fer.posLivreArray(c)] = conta;
         
     }
+    public Conta getConta(int i){
+        return this.c[i];
+    }
+    
+    
+    
 }

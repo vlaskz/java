@@ -15,7 +15,16 @@ public class Conta {
     protected int numConta;
     protected double saldo;
     protected double limite;
+    public static int totalContas;
 
+    public Conta(){
+        Conta.totalContas++;
+    }
+    
+    public int getTotalContas(){
+        return Conta.totalContas;
+    }
+    
     public boolean sacar(double valor) {
         if (this.saldo <= valor) {
             return (false);
@@ -26,6 +35,7 @@ public class Conta {
         }
     }
 
+    
     public boolean depositar(double valor) {
         this.saldo += valor;
         return (true);

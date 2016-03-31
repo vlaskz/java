@@ -9,18 +9,15 @@ package main;
 public class Deitel {
 
     public static void main(String[] args) {
+Banco b = new Banco(3);
+Conta c = new Conta();
+Cliente cli = new Cliente();
+cli.nome = "Tanulio!!!"
+c.saldo = 13000;
 
-        Empresa e = new Empresa(1);
+b.addConta(c);
 
-        for (int i = 1; i < 5; i++) {
-            Funcionario f = new Funcionario();
-            f.setNome("Sam Velasquez" + i);
-            f.setSalario(123 * i);
-            e.addEmpregado(f);
-        }
-        System.out.println("\n");
-        e.mostrarEmpregados();
-        
+System.out.println("total de contas:"+b.c[0].getTotalContas());      
         
 
     }

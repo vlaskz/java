@@ -12,17 +12,17 @@ package main;
 public class Funcionario {
 
     Funcionario() {
-        Funcionario.LastCount++;
+        Funcionario.totalFuncionarios++;
     }
 
     Funcionario(String nome) {
-        Funcionario.LastCount++;
+        Funcionario.totalFuncionarios++;
         this.setNome(nome);
-        Funcionario.LastCount++;
+        Funcionario.totalFuncionarios++;
     }
 
     Funcionario(Endereco end) {
-        Funcionario.LastCount++;
+        Funcionario.totalFuncionarios++;
         this.setNome(nome);
         this.setEndereco(end);
     }
@@ -33,10 +33,10 @@ public class Funcionario {
     private double salario;
     private Data dataEnt = new Data();
     private String RG;
-    private static int LastCount;
+    private static int totalFuncionarios;
 
-    public int getLastCount() {
-        return Funcionario.LastCount;
+    public int getTotalFuncionarios() {
+        return Funcionario.totalFuncionarios;
     }
 
     public void setEndereco(Endereco endereco) {

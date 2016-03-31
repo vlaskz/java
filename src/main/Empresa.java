@@ -58,7 +58,7 @@ public class Empresa {
                 
             }
         }
-        System.out.println("Quantidade de Funcionários registrados:"+this.empregados[0].getLastCount());
+        System.out.println("Quantidade de Funcionários registrados:"+this.empregados[0].getTotalFuncionarios());
     }
 
     boolean contem(Funcionario f) {
