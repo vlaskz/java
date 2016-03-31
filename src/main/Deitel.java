@@ -17,9 +17,8 @@ public class Deitel {
         b.addConta(c1);
         b.addConta(c2);
         b.resumo();
-       
-        
-        System.out.println("total de contas:" +Conta.getTotalContas();
+
+        System.out.println("total de contas:" + Conta.getTotalContas();
 
     }
 }

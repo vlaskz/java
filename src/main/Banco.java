@@ -11,24 +11,32 @@ package main;
  */
 public class Banco {
 
-    
-    protected Conta[] c;
+    protected Conta[] contas;
+
+    public Banco() {
+        this.contas = new Conta[1]; /*TODO: recode to no args*/
+    }
 
     public Banco(int n) {
-        this.c = new Conta[n];
+        this.contas = new Conta[n];
 
     }
 
-    public void addConta(Conta conta){
+    public void addConta(Conta conta) {
         Ferramentas fer = new Ferramentas();
-        c = fer.avaliarArray(c);
-        c[fer.posLivreArray(c)] = conta;
-        
+        contas = fer.avaliarArray(contas);
+        contas[fer.posLivreArray(contas)] = conta;
+
     }
-    public Conta getConta(int i){
-        return this.c[i];
+
+    public Conta getConta(int i) {
+        return this.contas[i];
     }
     
-    
-    
+    public void resumo(){
+        for(Conta c:contas){
+            c.resumoConta();
+        }
+    }
+
 }
