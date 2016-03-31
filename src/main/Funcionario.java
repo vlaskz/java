@@ -12,18 +12,18 @@ package main;
 public class Funcionario {
 
     Funcionario() {
-        Funcionario.ID++;
+        Funcionario.LastCount++;
         System.out.println("Funcionário Criado com Sucesso");
     }
 
     Funcionario(String nome) {
-        Funcionario.ID++;
+        Funcionario.LastCount++;
         this.setNome(nome);
-        Funcionario.ID++;
+        Funcionario.LastCount++;
     }
 
     Funcionario(Endereco end) {
-        Funcionario.ID++;
+        Funcionario.LastCount++;
         this.setNome(nome);
         this.setEndereco(end);
     }
@@ -34,10 +34,10 @@ public class Funcionario {
     private double salario;
     private Data dataEnt = new Data();
     private String RG;
-    private static int ID;
+    private static int LastCount;
 
-    public int getID() {
-        return Funcionario.ID;
+    public int getLastCount() {
+        return Funcionario.LastCount;
     }
 
     public void setEndereco(Endereco endereco) {
@@ -99,6 +99,6 @@ public class Funcionario {
     public void mostra() {
         System.out.print("Nome:" + this.getNome() + "\nData de Entrada:"
                 + this.getData().formatada() + "\nRG:" + this.getRG() + "\nDepartamento:"
-                + this.getDepto() + "\nSalário:" + this.getSalario() + "\n");
+                + this.getDepto() + "\nSalário:" + this.getSalario() + "\n\n");
     }
 }
