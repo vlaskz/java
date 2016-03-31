@@ -9,7 +9,7 @@ package main;
 public class Deitel {
 
     public static void main(String[] args) {
-     System.out.println("é nois");
+     System.out.println("é nois na fita!!!");
 
 }
 }
