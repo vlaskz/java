@@ -12,10 +12,10 @@ public class Deitel {
         Banco b = new Banco();
         Conta c = new Conta();
         Conta c1 = new Conta();
-        Conta c2 = new Conta();
+        Conta c3 = new Conta();
         b.addConta(c);
         b.addConta(c1);
-        b.addConta(c2);
+        b.addConta(c3);
         b.resumo();
 
         System.out.println("total de contas:" + Conta.getTotalContas();
