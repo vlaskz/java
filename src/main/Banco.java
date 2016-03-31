@@ -11,11 +11,16 @@ package main;
  */
 public class Banco {
 
-    int n = 0;
-    protected Conta[] c = new Conta[n];
+    protected Conta[] c;
 
     public Banco(int n) {
         this.c = new Conta[n];
     }
 
+    public void addConta(Conta conta){
+        Ferramentas fer = new Ferramentas();
+        c = fer.avaliarArray(c);
+        c[fer.posLivreArray(c)] = conta;
+        
+    }
 }

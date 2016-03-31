@@ -16,9 +16,9 @@ public class Deitel {
             Funcionario f = new Funcionario();
             f.setNome("Sam Velasquez" + i);
             f.setSalario(123 * i);
-            e.setEmpregado(f);
+            e.addEmpregado(f);
         }
-        
+        System.out.println("\n");
         e.mostrarEmpregados();
         
         

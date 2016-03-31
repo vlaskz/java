@@ -30,7 +30,11 @@ public class Empresa {
         return this.razaoSocial;
     }
 
-    public void setEmpregado(Funcionario f) {
+    /**
+     *adiciona empregados utilizando os métodos da classe Ferramentas
+     * @param f
+     */
+    public void addEmpregado(Funcionario f) {
         
         Ferramentas fer;
         fer = new Ferramentas();

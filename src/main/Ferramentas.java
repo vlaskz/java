@@ -42,11 +42,32 @@ public class Ferramentas {
         }
     }
 
+  public Conta[] avaliarArray(Conta[] o) {
+        if (o[o.length - 1] != null) {
+            Conta[] p = o;
+            o = new Conta[o.length + 1];
+            System.arraycopy(p, 0, o, 0, p.length);
+
+            return o;
+        } else {
+            return o;
+        }
+    }  
+    
     public int posLivreArray(Funcionario[] f) {
 
         int i;
         for (i = 0; i < f.length; i++) {
             if(f[i]==null) break;
+        }
+        return i;
+    }
+    
+    public int posLivreArray(Conta[] c) {
+
+        int i;
+        for (i = 0; i < c.length; i++) {
+            if(c[i]==null) break;
         }
         return i;
     }

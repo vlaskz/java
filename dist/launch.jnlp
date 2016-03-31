@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="file:/C:/Users/IsaiasVelasquez-/Desktop/Java%20Projects/deitel/dist/" href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>Exercícios de Fixação da Caelum FJ-11</title>
+        <vendor>Sam Velasquez</vendor>
+        <homepage href=""/>
+        <description>Exercícios de Fixação da Caelum FJ-11</description>
+        <description kind="short">Exercícios de Fixação da Caelum FJ-11</description>
+    <offline-allowed/>
+</information>
+    <update check="background"/>
+    <resources>
+        <j2se version="1.8+"/>
+        <jar href="deitel.jar" main="true"/>
+    </resources>
+    <application-desc main-class="main.Deitel">
+    </application-desc>
+</jnlp>

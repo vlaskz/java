@@ -13,7 +13,6 @@ public class Funcionario {
 
     Funcionario() {
         Funcionario.LastCount++;
-        System.out.println("Funcionário Criado com Sucesso");
     }
 
     Funcionario(String nome) {
