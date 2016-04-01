@@ -8,7 +8,7 @@ package main;
  */
 public class Deitel {
 
-    @SuppressWarnings("NestedAssignment")
+   
     public static void main(String[] args) {
         Banco b = new Banco();
 
@@ -34,5 +34,4 @@ public class Deitel {
 
         System.out.println("\n\ntotal de contas:" + Conta.getTotalContas());
 
-    }
-}
+    }}

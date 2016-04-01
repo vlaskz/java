@@ -12,7 +12,7 @@ package main;
 public class AtualizadorDeContas {
 
     private double saldoTotal = 0;
-    private double selic;
+    private final double selic;
 
     public AtualizadorDeContas(double selic) {
         this.selic = selic;

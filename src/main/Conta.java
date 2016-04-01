@@ -9,7 +9,7 @@ package main;
  *
  * @author Sam Velasquez
  */
-public class Conta {
+public abstract class Conta {
 
     protected Cliente titular = new Cliente();
     protected int numConta;
@@ -66,7 +66,7 @@ public class Conta {
     }
 
     void resumoConta() {
-        System.out.print("Conta:" + this.numConta + "\nTitular:" + this.titular.nome + "\nSaldo:" + this.saldo + "\n");
+        System.out.print("Conta:" + this.numConta + "\nTitular:" + this.titular.nome + "\nSaldo:" + this.saldo + "\n\n");
     }
 
     /**
@@ -74,7 +74,7 @@ public class Conta {
      *
      * @param taxa
      */
-    public void atualizar(double taxa) {
+   abstract void atualizar(double taxa) {
         this.saldo += this.saldo * taxa;
     }
 
