@@ -8,17 +8,31 @@ package main;
  */
 public class Deitel {
 
+    @SuppressWarnings("NestedAssignment")
     public static void main(String[] args) {
         Banco b = new Banco();
-        Conta c = new Conta();
-        Conta c1 = new Conta();
-        Conta c3 = new Conta();
-        b.addConta(c);
-        b.addConta(c1);
-        b.addConta(c3);
-        b.resumo();
 
-        System.out.println("total de contas:" + Conta.getTotalContas();
+        Conta c;
+        Conta c1;
+        Conta c2;
+        Conta c3;
+        
+        b.addConta(c = new ContaCorrente());
+        b.addConta(c1 = new ContaPoupanca());
+        b.addConta(c2 = new ContaPoupanca());
+        b.addConta(c3 = new ContaCorrente());
+        
+        
+        for (Conta ct : b.contas) {
+            ct.depositar(300);
+        }
+        AtualizadorDeContas ac = new AtualizadorDeContas(3);
+        for (Conta ct : b.contas) {
+        ac.roda(ct);
+        }
+     
+
+        System.out.println("\n\ntotal de contas:" + Conta.getTotalContas());
 
     }
 }
