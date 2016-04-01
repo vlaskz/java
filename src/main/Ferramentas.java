@@ -17,7 +17,7 @@ public class Ferramentas {
      * devolvendo-o com os dados já inseridos.
      *
      * @param o
-     * @return 0 (array de objetos)
+     * @return o (array de objetos)
      */
     public int[] avaliarArray(int[] o) {
         if (o[o.length - 1] != 0) {

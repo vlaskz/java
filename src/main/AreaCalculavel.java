@@ -4,17 +4,12 @@
  * and open the template in the editor.
  */
 package main;
-import java.util.Scanner;
+
 /**
  *
  * @author Sam Velasquez
  */
-public class SistemaInterno {
-    
-    void login(Autenticavel a){
-        Scanner s = new Scanner(System.in);
-        int senha = s.nextInt();
-        boolean ok = a.autenticar(senha);
-    }
+public interface AreaCalculavel {
+    double calcularArea();
     
 }
