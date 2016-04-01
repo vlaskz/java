@@ -74,7 +74,7 @@ public abstract class Conta {
      *
      * @param taxa
      */
-   abstract void atualizar(double taxa) {
+   public void atualizar(double taxa) {
         this.saldo += this.saldo * taxa;
     }
 

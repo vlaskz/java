@@ -2,11 +2,11 @@ package main;
 
 /**
  * pacote de testes com códigos dos exercícios dos livros HeadFirst Java, FJ-11
- * da Caelum e Java - Como programar do Harvey Deitel \o/
+ da Caelum e Java - Como programar do Harvey Main \o/
  *
  * @author Sam Velasquez
  */
-public class Deitel {
+public class Main {
 
    
     public static void main(String[] args) {
